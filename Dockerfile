@@ -1,8 +1,8 @@
-FROM python:2.7
+FROM python:6.2.5
 
 WORKDIR /app
 
-COPY requirements.txt /tmp/requirements.txt
+COPY requirements.txt ./tmp/requirements.txt
 
 RUN pip install --no-cache-dir -r requirements.txt
 
